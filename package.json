@@ -1,0 +1,26 @@
+{
+  "name": "atmproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "account":"node account.js",
+    "atm":"node atm.js",
+    "wallet":"node wallet.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codymart1986/atmProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codymart1986/atmProject/issues"
+  },
+  "homepage": "https://github.com/codymart1986/atmProject#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
