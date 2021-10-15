@@ -1,8 +1,5 @@
-const pin = 1986
+let pin = 1986;
+let balance = 1000;
 
-const balance = 1000
-
-module.exports = {
-    pin, 
-    balance
-}
+module.exports.pin = pin;
+module.exports.balance = balance;
