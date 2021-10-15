@@ -12,4 +12,21 @@ function validatePin(){
         validatePin();
     }
     return
-}
+};
+
+function withdraw(){
+    let prompt = require("prompt-sync")();
+    let withdrawAmount = parseInt(prompt("How much would you like to withdraw?"));
+    if (withdrawAmount <= accountInfo.balance){
+        accountInfo.balance = accountInfo.balance - withdrawAmount;
+        console.log("Withdrawing $" + withdrawAmount + " from your account, Your new balance is $" + accountInfo.balance);
+    }
+    else if (withdrawAmount > accountInfo.balance){
+        console.log("Insufficent Funds");
+        withdraw();
+    }
+    else {
+        console.log("Invalid Entry, Try again");
+        withdraw()
+    }
+};
