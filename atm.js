@@ -22,11 +22,27 @@ function withdraw(){
         console.log("Withdrawing $" + withdrawAmount + " from your account, Your new balance is $" + accountInfo.balance);
     }
     else if (withdrawAmount > accountInfo.balance){
-        console.log("Insufficent Funds");
+        console.log("Insufficient Funds");
         withdraw();
     }
     else {
         console.log("Invalid Entry, Try again");
         withdraw()
     }
+
 };
+
+// function deposit(){
+//     let prompt = require("prompt-sync")();
+//     let depositAmount = parseInt(prompt("How much would you like to deposit today?"));
+//     if (depositAmount = isNaN){
+//         console.log("That is not a valid selection!");
+//         deposit()
+//     }
+//     else {
+//         accountInfo.balance = depositAmount + accountInfo.balance;
+//         console.log("You deposited $" + depositAmount + " into your account, Your new balance is $" + accountInfo.balance);
+//     }
+
+// };
+// deposit()
