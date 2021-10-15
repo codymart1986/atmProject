@@ -45,4 +45,8 @@ function withdraw(){
 //     }
 
 // };
-// deposit()
+
+function getBalance(){
+    console.log("Your current balance is $" + accountInfo.balance);
+};
+getBalance()
